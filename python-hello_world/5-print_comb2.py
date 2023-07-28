@@ -1,0 +1,1 @@
+print(", ".join("{:02}".format(number) for number in range(100)))

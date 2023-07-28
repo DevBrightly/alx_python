@@ -1,2 +1,2 @@
-for hex in range(99):
-    print("%d = 0x%x" % (hex, hex))
+for number in range(99):
+    print("{} = 0x{:X}".format(number, number))
