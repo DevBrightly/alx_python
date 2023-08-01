@@ -7,7 +7,6 @@ def print_arguments():
     
     if num_args > 0:
         print("{} argument{}:".format(num_args, 's' if num_args > 1 else ''))
-        # print("Argument{}:".format('s' if num_args > 1 else ''))
         for i, arg in enumerate(sys.argv[1:], start=1):
             print("{}: {}".format(i, arg))
     else:
