@@ -1,11 +1,7 @@
-# 0-add.py
+from add_0 import add
 
 a = 1
 b = 2
-
-# Use __import__ to import the function
-add_module = __import__('add_0')
-add = add_module.add
 
 result = add(a, b)
 
