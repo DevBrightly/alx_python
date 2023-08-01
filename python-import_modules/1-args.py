@@ -1,17 +1,15 @@
 import sys
 
 def print_arguments():
-    # Get the number of arguments
+ 
     num_args = len(sys.argv) - 1
 
-    # Print the number of arguments
-    print(f"Number of argument(s): {num_args}")
-
-    # Print the list of arguments
+    print("{} argument{}:".format(num_args, 's' if num_args > 1 else ''))
+    
     if num_args > 0:
-        print(f"Argument{'s' if num_args > 1 else ''}:")
+        # print("Argument{}:".format('s' if num_args > 1 else ''))
         for i, arg in enumerate(sys.argv[1:], start=1):
-            print(f"{i}: {arg}")
+            print("{}: {}".format(i, arg))
     else:
         print(".")
     
